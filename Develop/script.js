@@ -43,11 +43,11 @@ function generatePassword() {
   for (var i = 0; i < length; i++) {
     password += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
     if (length < 8 || length > 128) {
-      alert("Your password did not meet the required length. Please enter a valid length!");
+      window.alert("Your password did not meet the required length. Please enter a valid length!");
       return "Click button to begin generating your password!";
     }
     else {
-      alert("You did not enter a valid input. Please enter a desired length for your password!");
+      window.alert("You did not enter a valid input. Please enter a desired length for your password!");
       return "Click button to begin generating your password!";
     }
   }
