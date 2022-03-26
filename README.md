@@ -28,3 +28,13 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
+## Screenshots
+
+When users give input other than integers or no onput at all:
+![inavlid entry alert](./screenshot/Capture1.PNG)
+
+When users give input number not within 8 to 128:
+![too low or high of a value](./screenshot/Capture3.PNG)
+
+Password generated 50 characters based on prompts chosen:
+![password generated 50 characters based on prompts I chose](./screenshot/Capture2.PNG)

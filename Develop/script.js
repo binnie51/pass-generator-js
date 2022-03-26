@@ -9,11 +9,11 @@ const keyStrings = {
   special_char: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
 };
 
-// define function for the password generator 
+// Define function for the password generator 
 function generatePassword() {
   var passwordCharSet = ""; // empty string for character prompts
   
-  // series of prompts for the users
+  // Series of prompts for the users and running checks to ensure valid entries for the inputs
   var length = parseInt(prompt("How many characters would you like your password to contain? Plese enter a number from 8 to 128."));
   
   if (length < 8 || length > 128) {
@@ -46,8 +46,8 @@ function generatePassword() {
     };
   }
 
-  // conditionals for the password length
-  var password = ""; // variable for the actual password being generated
+  // Conditionals for the password length
+  var password = ""; // variable for the actual password being generated for users
 
   for (var i = 0; i < length; i++) {
     password += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
